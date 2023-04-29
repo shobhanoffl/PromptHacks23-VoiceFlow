@@ -1,0 +1,1282 @@
+{
+  "_version": "1.2",
+  "project": {
+    "_id": "644cd304a04f8000073279e2",
+    "name": "Learn Voiceflow - Webchat",
+    "teamID": "w0EVawDpnG",
+    "devVersion": "644cd304d0125e2d5e52ed3d",
+    "platform": "webchat",
+    "type": "chat",
+    "platformData": {},
+    "members": [],
+    "linkType": "STRAIGHT",
+    "image": "https://cm4-production-assets.s3.amazonaws.com/1674250017903-frame-7.png",
+    "customThemes": [],
+    "apiPrivacy": "public",
+    "_version": 1.2,
+    "updatedAt": "2023-04-29T15:39:20.626Z",
+    "creatorID": 129943,
+    "updatedBy": 129943,
+    "aiAssistSettings": {
+      "aiPlayground": true,
+      "generateNoMatch": true
+    },
+    "prototype": {
+      "nlp": {
+        "appID": "b41581ad-b439-4851-b02d-7f9d6933a216",
+        "resourceID": "ngjnhokl:https://us-2.cognitiveservices.azure.com/",
+        "type": "LUIS"
+      },
+      "lastTrainedTime": 1682774198677,
+      "trainedModel": {
+        "intents": [],
+        "slots": []
+      }
+    },
+    "createdAt": "2023-04-29T08:19:16.000Z"
+  },
+  "version": {
+    "_id": "644cd304d0125e2d5e52ed3d",
+    "variables": [
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "locale",
+      "counter",
+      "Age",
+      "age",
+      "topic",
+      "subject",
+      "resp_of_subj",
+      "duration",
+      "name",
+      "doubts"
+    ],
+    "platformData": {
+      "slots": [],
+      "intents": [
+        {
+          "key": "bzga3j4q",
+          "name": "Learn Button",
+          "inputs": [
+            {
+              "text": "how do I add a choice to the canvas",
+              "slots": []
+            },
+            {
+              "text": "how do I use the buttons step",
+              "slots": []
+            },
+            {
+              "text": "buttons step help",
+              "slots": []
+            },
+            {
+              "text": "how to use choice",
+              "slots": []
+            },
+            {
+              "text": "how do I give the user a choice",
+              "slots": []
+            },
+            {
+              "text": "how to use button",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "psac3o99",
+          "name": "Jump Here",
+          "inputs": [
+            {
+              "text": "jump here",
+              "slots": []
+            },
+            {
+              "text": "jump there please",
+              "slots": []
+            },
+            {
+              "text": "jump intent",
+              "slots": []
+            },
+            {
+              "text": "jump there",
+              "slots": []
+            },
+            {
+              "text": "jump",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "582pg3mye",
+          "name": "Learn Intents",
+          "inputs": [
+            {
+              "text": "learn about intents please",
+              "slots": []
+            },
+            {
+              "text": "i want to learn about intents",
+              "slots": []
+            },
+            {
+              "text": "intent learn",
+              "slots": []
+            },
+            {
+              "text": "intents learn",
+              "slots": []
+            },
+            {
+              "text": "learn intents",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "z8cn3985",
+          "name": "Tell me more",
+          "inputs": [
+            {
+              "text": "What else can you tell me?",
+              "slots": []
+            },
+            {
+              "text": "Can you give me more information?",
+              "slots": []
+            },
+            {
+              "text": "Do you have anything else to add?",
+              "slots": []
+            },
+            {
+              "text": "What else do you know?",
+              "slots": []
+            },
+            {
+              "text": "Go on.",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "a5uo39mw",
+          "name": "Launch Assistant",
+          "inputs": [
+            {
+              "text": "Launch my assistant",
+              "slots": []
+            },
+            {
+              "text": "connect assistant to website",
+              "slots": []
+            },
+            {
+              "text": "launch assistant",
+              "slots": []
+            },
+            {
+              "text": "put assistant on website",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "VF.START_OVER",
+          "name": "VF.START_OVER",
+          "inputs": [],
+          "slots": []
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "en-US"
+        ]
+      },
+      "publishing": {
+        "avatar": "https://cdn.voiceflow.com/assets/logo.png",
+        "color": "#2E7FF1",
+        "description": "Our virtual assistant is here to help you.",
+        "image": "https://cdn.voiceflow.com/assets/logo.png",
+        "persistence": "localStorage",
+        "position": "right",
+        "spacing": {
+          "side": 24,
+          "bottom": 24
+        },
+        "title": "Learn Voiceflow - Webchat",
+        "watermark": true
+      },
+      "platform": "webchat"
+    },
+    "_version": 4.01,
+    "name": "Initial Version",
+    "projectID": "644cd304a04f8000073279e2",
+    "manualSave": false,
+    "autoSaveFromRestore": false,
+    "topics": [
+      {
+        "sourceID": "644cd304d0125e2d5e52ed3f",
+        "type": "DIAGRAM"
+      }
+    ],
+    "components": [],
+    "rootDiagramID": "644cd304d0125e2d5e52ed3f",
+    "domains": [
+      {
+        "id": "cla06iyr900b206pkh8d4ap8n",
+        "name": "Home",
+        "live": true,
+        "topicIDs": [
+          "644cd304d0125e2d5e52ed3f"
+        ],
+        "rootDiagramID": "644cd304d0125e2d5e52ed3f",
+        "updatedAt": "2023-04-29T15:38:09.078Z",
+        "updatedBy": 129943
+      }
+    ],
+    "creatorID": 129943,
+    "prototype": {
+      "type": "chat",
+      "data": {
+        "name": "Learn Voiceflow - Webchat",
+        "locales": [
+          "en-US"
+        ]
+      },
+      "model": {
+        "intents": [],
+        "slots": []
+      },
+      "context": {
+        "stack": [
+          {
+            "programID": "644cd304d0125e2d5e52ed3f",
+            "storage": {},
+            "variables": {}
+          }
+        ],
+        "variables": {}
+      },
+      "surveyorContext": {
+        "slotsMap": {},
+        "extraSlots": [],
+        "extraIntents": [],
+        "usedIntentsSet": [],
+        "platform": "webchat",
+        "goToIntentsSet": [],
+        "products": {},
+        "interfaces": [],
+        "permissions": [],
+        "usedCustomBlocks": []
+      },
+      "settings": {},
+      "platform": "webchat"
+    }
+  },
+  "diagrams": {
+    "644cd304d0125e2d5e52ed3f": {
+      "_id": "644cd304d0125e2d5e52ed3f",
+      "offsetX": 291.5574934542947,
+      "offsetY": -14.648162520762583,
+      "zoom": 100,
+      "variables": [],
+      "name": "Proj",
+      "versionID": "644cd304d0125e2d5e52ed3d",
+      "creatorID": 129943,
+      "modified": 1682756356,
+      "intentStepIDs": [],
+      "type": "TOPIC",
+      "menuNodeIDs": [],
+      "nodes": {
+        "start00000000000000000000": {
+          "nodeID": "start00000000000000000000",
+          "type": "start",
+          "coords": [
+            -48.49766895690578,
+            230.5762459317019
+          ],
+          "data": {
+            "name": "Start",
+            "color": "#56b365",
+            "steps": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "644d2839acd8cf3643cc3604",
+                  "id": "6032afcf359e8c14c06c0319",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          16.15,
+                          252.58
+                        ]
+                      },
+                      {
+                        "point": [
+                          73.08,
+                          252.58
+                        ]
+                      },
+                      {
+                        "point": [
+                          73.08,
+                          327.11
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "label": "Start"
+          }
+        },
+        "644ce4d646cc330171bbda39": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "ga1t031mo",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Hi "
+                      },
+                      {
+                        "id": "name",
+                        "name": "name",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": "!  Looks like it's time to learn!"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "644d0df8acd8cf3643cc34db",
+                  "id": "644ce4d646cc330171bbda3a",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "644ce4d646cc330171bbda39"
+        },
+        "644ce4d646cc330171bbda3b": {
+          "type": "block",
+          "data": {
+            "name": "New Block 1",
+            "steps": [
+              "644ce4d646cc330171bbda39"
+            ]
+          },
+          "nodeID": "644ce4d646cc330171bbda3b",
+          "coords": [
+            561.9316248022436,
+            370.0713763353107
+          ]
+        },
+        "644d0df8acd8cf3643cc34db": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "v1qd31fp",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Could you please tell me the topic(s) and/or further details on the one you're preparing on"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "47v831yn",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Could you please enlighten me on the topic(s) and/or more info concerning the one you are readying?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "644d1111acd8cf3643cc3572",
+                  "id": "644d0df8acd8cf3643cc34dc",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1128.11,
+                          445.51
+                        ]
+                      },
+                      {
+                        "point": [
+                          1202.99,
+                          445.51
+                        ]
+                      },
+                      {
+                        "point": [
+                          1202.99,
+                          354.94
+                        ]
+                      },
+                      {
+                        "point": [
+                          1277.86,
+                          354.94
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "644d0df8acd8cf3643cc34db"
+        },
+        "644d0df8acd8cf3643cc34dd": {
+          "type": "block",
+          "data": {
+            "name": "New Block 2",
+            "steps": [
+              "644d0df8acd8cf3643cc34db"
+            ],
+            "color": ""
+          },
+          "nodeID": "644d0df8acd8cf3643cc34dd",
+          "coords": [
+            961.7139628358584,
+            313.41209137347323
+          ]
+        },
+        "644d1111acd8cf3643cc356f": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "resp_of_subj"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "644d1afcacd8cf3643cc359a",
+                  "id": "644d1111acd8cf3643cc3570",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1609.26,
+                          418.54
+                        ]
+                      },
+                      {
+                        "point": [
+                          1684.82,
+                          418.54
+                        ]
+                      },
+                      {
+                        "point": [
+                          1684.82,
+                          327.73
+                        ]
+                      },
+                      {
+                        "point": [
+                          1760.39,
+                          327.73
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "644d1111acd8cf3643cc3571"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "644d1111acd8cf3643cc356f"
+        },
+        "644d1111acd8cf3643cc3572": {
+          "type": "block",
+          "data": {
+            "name": "New Block 7",
+            "color": "",
+            "steps": [
+              "644d1111acd8cf3643cc356f"
+            ]
+          },
+          "nodeID": "644d1111acd8cf3643cc3572",
+          "coords": [
+            1442.8593263993234,
+            327.94312312423585
+          ]
+        },
+        "644d1afcacd8cf3643cc3598": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "hp2b131gn",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "How much time have you allocated for this?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "bx2c031c8",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "How much time do you have set aside for this?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "644d1b32acd8cf3643cc35a3",
+                  "id": "644d1afcacd8cf3643cc3599",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          2091.79,
+                          410.33
+                        ]
+                      },
+                      {
+                        "point": [
+                          2181.49,
+                          400.66
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "644d1afcacd8cf3643cc3598"
+        },
+        "644d1afcacd8cf3643cc359a": {
+          "type": "block",
+          "data": {
+            "name": "New Block 7",
+            "steps": [
+              "644d1afcacd8cf3643cc3598"
+            ]
+          },
+          "nodeID": "644d1afcacd8cf3643cc359a",
+          "coords": [
+            1925.3864665154638,
+            300.72686981761984
+          ]
+        },
+        "644d1b32acd8cf3643cc35a3": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "duration"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "644d1cfdacd8cf3643cc35d7",
+                  "id": "644d1b32acd8cf3643cc35a4",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          2514.29,
+                          412.16
+                        ]
+                      },
+                      {
+                        "point": [
+                          2587.11,
+                          412.16
+                        ]
+                      },
+                      {
+                        "point": [
+                          2587.11,
+                          277.06
+                        ]
+                      },
+                      {
+                        "point": [
+                          2659.94,
+                          277.06
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "644d1b32acd8cf3643cc35a5"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "644d1b32acd8cf3643cc35a3",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "644d1b32acd8cf3643cc35a6": {
+          "type": "block",
+          "data": {
+            "name": "New Block 8",
+            "steps": [
+              "644d1b32acd8cf3643cc35a3"
+            ]
+          },
+          "nodeID": "644d1b32acd8cf3643cc35a6",
+          "coords": [
+            2347.8864665154647,
+            321.56020315095304
+          ]
+        },
+        "644d1cfdacd8cf3643cc35d5": {
+          "type": "generative",
+          "data": {
+            "name": "Response AI",
+            "mode": "memory_prompt",
+            "prompt": "User is a student who wants to learn {{[topic].topic}} as much as possible within {{[duration].duration}}, suggest the user best plan to master {{[topic].topic}} with timeline along with subtopics in brief manner",
+            "system": "You are an expert in {{[topic].topic}} for the user who wants to master the {{[topic].topic}}",
+            "maxTokens": 501,
+            "model": "gpt-3.5-turbo",
+            "temperature": 0.7,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "644d3525acd8cf3643cc368f",
+                  "id": "644d1cfdacd8cf3643cc35d6",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          2991.34,
+                          396.91
+                        ]
+                      },
+                      {
+                        "point": [
+                          3066.37,
+                          396.91
+                        ]
+                      },
+                      {
+                        "point": [
+                          3066.37,
+                          303.33
+                        ]
+                      },
+                      {
+                        "point": [
+                          3141.4,
+                          303.33
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "644d1cfdacd8cf3643cc35d5"
+        },
+        "644d1cfdacd8cf3643cc35d7": {
+          "type": "block",
+          "data": {
+            "name": "New Block 10",
+            "steps": [
+              "644d1cfdacd8cf3643cc35d5"
+            ]
+          },
+          "nodeID": "644d1cfdacd8cf3643cc35d7",
+          "coords": [
+            2824.9377142873022,
+            250.06020315095316
+          ]
+        },
+        "644d2839acd8cf3643cc3602": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "gw3z631vz",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Hi There! Could you please tell your name?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "644d2870acd8cf3643cc3618",
+                  "id": "644d2839acd8cf3643cc3603",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          239.48,
+                          417.71
+                        ]
+                      },
+                      {
+                        "point": [
+                          263.48,
+                          417.71
+                        ]
+                      },
+                      {
+                        "point": [
+                          263.48,
+                          480.22
+                        ]
+                      },
+                      {
+                        "point": [
+                          83.35,
+                          480.22
+                        ]
+                      },
+                      {
+                        "point": [
+                          83.35,
+                          504.22
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "644d2839acd8cf3643cc3602"
+        },
+        "644d2839acd8cf3643cc3604": {
+          "type": "block",
+          "data": {
+            "name": "New Block 14",
+            "steps": [
+              "644d2839acd8cf3643cc3602"
+            ],
+            "color": ""
+          },
+          "nodeID": "644d2839acd8cf3643cc3604",
+          "coords": [
+            73.08388184523288,
+            327.10565769640783
+          ]
+        },
+        "644d2870acd8cf3643cc3615": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "name"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "644ce4d646cc330171bbda3b",
+                  "id": "644d2870acd8cf3643cc3616",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          249.75,
+                          583.57
+                        ]
+                      },
+                      {
+                        "point": [
+                          323.34,
+                          583.57
+                        ]
+                      },
+                      {
+                        "point": [
+                          323.34,
+                          397.07
+                        ]
+                      },
+                      {
+                        "point": [
+                          396.93,
+                          397.07
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "644d2870acd8cf3643cc3617"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "644d2870acd8cf3643cc3615",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "644d2870acd8cf3643cc3618": {
+          "type": "block",
+          "data": {
+            "name": "New Block 15",
+            "steps": [
+              "644d2870acd8cf3643cc3615"
+            ]
+          },
+          "nodeID": "644d2870acd8cf3643cc3618",
+          "coords": [
+            83.35126152437726,
+            504.2179571616482
+          ]
+        },
+        "644d3525acd8cf3643cc368f": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "rf7co31t7",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "If you have any doubts/questions kindly ask that, if not kindly reply with 'done'"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "644d3525acd8cf3643cc3690"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "644d3525acd8cf3643cc368f",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "644d3525acd8cf3643cc3691": {
+          "type": "block",
+          "data": {
+            "name": "New Block 12",
+            "steps": [
+              "644d3525acd8cf3643cc368f",
+              "644d3735acd8cf3643cc36c6"
+            ]
+          },
+          "nodeID": "644d3525acd8cf3643cc3691",
+          "coords": [
+            3307.803133182131,
+            224.22686981761973
+          ]
+        },
+        "644d3735acd8cf3643cc36c6": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "doubts"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "644d3896acd8cf3643cc36ee",
+                  "id": "644d3735acd8cf3643cc36c7",
+                  "data": {}
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "644d3735acd8cf3643cc36c8"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "644d3735acd8cf3643cc36c6",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "644d3748acd8cf3643cc36cc": {
+          "type": "generative",
+          "data": {
+            "name": "Response AI",
+            "mode": "memory",
+            "prompt": "",
+            "system": "",
+            "maxTokens": 128,
+            "model": "gpt-3.5-turbo",
+            "temperature": 0.7,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "644d3525acd8cf3643cc3691",
+                  "id": "644d3748acd8cf3643cc36cd",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "644d3748acd8cf3643cc36cc"
+        },
+        "644d3748acd8cf3643cc36ce": {
+          "type": "block",
+          "data": {
+            "name": "New Block 14",
+            "steps": [
+              "644d3748acd8cf3643cc36cc"
+            ]
+          },
+          "nodeID": "644d3748acd8cf3643cc36ce",
+          "coords": [
+            3905.57987317282,
+            261.5392822461
+          ]
+        },
+        "644d3896acd8cf3643cc36eb": {
+          "type": "ifV2",
+          "data": {
+            "name": "If",
+            "expressions": [
+              {
+                "type": null,
+                "name": "",
+                "value": [
+                  {
+                    "logicInterface": "variable",
+                    "type": "equals",
+                    "value": [
+                      {
+                        "type": "variable",
+                        "value": "doubts"
+                      },
+                      {
+                        "type": "value",
+                        "value": "done"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "noMatch": {
+              "type": "path",
+              "pathName": "Else"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "id": "644d38a4acd8cf3643cc36f4",
+                  "type": "else",
+                  "target": "644d3748acd8cf3643cc36ce",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          3765.02,
+                          684.42
+                        ]
+                      },
+                      {
+                        "point": [
+                          3789.02,
+                          684.42
+                        ]
+                      },
+                      {
+                        "point": [
+                          3789.02,
+                          486.48
+                        ]
+                      },
+                      {
+                        "point": [
+                          3716.58,
+                          486.48
+                        ]
+                      },
+                      {
+                        "point": [
+                          3716.58,
+                          288.54
+                        ]
+                      },
+                      {
+                        "point": [
+                          3740.58,
+                          288.54
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "644d38b7acd8cf3643cc36f7",
+                  "id": "644d3896acd8cf3643cc36ec",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          3765.02,
+                          629.92
+                        ]
+                      },
+                      {
+                        "point": [
+                          3846.68,
+                          629.92
+                        ]
+                      },
+                      {
+                        "point": [
+                          3846.68,
+                          826.43
+                        ]
+                      },
+                      {
+                        "point": [
+                          3822.68,
+                          826.43
+                        ],
+                        "reversed": true,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "nodeID": "644d3896acd8cf3643cc36eb"
+        },
+        "644d3896acd8cf3643cc36ee": {
+          "type": "block",
+          "data": {
+            "name": "New Block 11",
+            "steps": [
+              "644d3896acd8cf3643cc36eb"
+            ]
+          },
+          "nodeID": "644d3896acd8cf3643cc36ee",
+          "coords": [
+            3613.373169262206,
+            553.253524735634
+          ]
+        },
+        "644d38b7acd8cf3643cc36f7": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "6k8mc31u9",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Thank You "
+                      },
+                      {
+                        "id": "name",
+                        "name": "name",
+                        "isSlot": false,
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " !"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "644d38b7acd8cf3643cc36f8"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "644d38b7acd8cf3643cc36f7"
+        },
+        "644d38b7acd8cf3643cc36f9": {
+          "type": "block",
+          "data": {
+            "name": "New Block 12",
+            "steps": [
+              "644d38b7acd8cf3643cc36f7"
+            ]
+          },
+          "nodeID": "644d38b7acd8cf3643cc36f9",
+          "coords": [
+            3656.2781971951663,
+            747.3317370261365
+          ]
+        }
+      },
+      "menuItems": [
+        {
+          "type": "NODE",
+          "sourceID": "start00000000000000000000"
+        }
+      ]
+    }
+  },
+  "variableStates": []
+}
